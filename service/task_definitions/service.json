@@ -29,6 +29,16 @@
         "awslogs-region": "ap-northeast-1",
         "awslogs-stream-prefix": "service"
       }
-    }
+    },
+    "environment": [
+      {
+        "name": "RAILS_ENV",
+        "value": "production"
+      },
+      {
+        "name": "RAILS_MASTER_KEY",
+        "value": "f3b59b39be91f577e6d279400d5a6f46"
+      }
+    ]
   }
 ]
