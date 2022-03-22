@@ -20,8 +20,9 @@ resource "aws_route53_record" "covid-mgr_certificate" {
     }
   }
 
-  name    = each.value.name
-  records = [each.value.record]
-  type    = each.value.type
-  ttl     = 60
+  allow_overwrite = true
+  name            = each.value.name
+  records         = [each.value.record]
+  type            = each.value.type
+  ttl             = 60
 }
