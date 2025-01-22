@@ -1,10 +1,4 @@
 .DS_Store
-
-# Terraform
 .terraform
 .terraform.lock.hcl
-*.tfstate
-*.tfstate.backup
-
-# 機密情報
-secret.auto.tfvars
+.env
